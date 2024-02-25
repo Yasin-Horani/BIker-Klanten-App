@@ -286,7 +286,6 @@ class CustomerManagementApp:
             # Filter customers based on the search term
             filtered_customers = [customer for customer in self.customer_data if
                                   search_term in [str(value).lower() for value in customer]]
-
             # Update the customer data and the menu
             self.customer_data = filtered_customers
             self.update_customer_menu()
